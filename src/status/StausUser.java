@@ -11,24 +11,17 @@ package status;
  */
 public class StausUser 
 {
-   public void statusDetail(String code)
-{
-switch(code.toUpperCase())
-        {
-        case "ZERO": System.out.println("REJECTED");
-        break;
-        case "ONE": System.out.println("PENDING");
-        break;
-        case "TWO":
-        System.out.println("PROCESSING");
-        break;
-        case "THREE": 
-            System.out.println("APPROVED");
-        break;
-        default:
-         System.out.println("NOT VALID CODE");
-        break;
-        }
+  private String mood;
+   public static final String[] MOOD= {"zero","one","two","three"};
+
+   public String getMood() {
+        return mood;
+    }
+   
+  public void setMood(){
+    this.mood=mood;
+}
+
 }
  
-}
+
