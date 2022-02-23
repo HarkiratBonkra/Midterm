@@ -21,6 +21,9 @@ public class StausUser
   public void setMood(){
     this.mood=mood;
 }
+  public void randomMood(){
+    return;
+}
 
 }
  
